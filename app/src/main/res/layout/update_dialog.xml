@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/colorPrimaryDark"
+
+
+    >
+
+    <EditText
+        android:id="@+id/updateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Enter a title"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/updateNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/updateTitle"
+        android:layout_alignStart="@+id/updateTitle"
+        android:layout_below="@+id/updateTitle"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="Enter a Note"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="94dp" />
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updateNote"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="UPDATE"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="169dp"
+        android:background="@color/colorPrimary"
+        />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/update_button"
+        android:layout_alignStart="@+id/update_button"
+        android:layout_below="@+id/update_button"
+        android:layout_marginTop="15dp"
+        android:text="DELETE"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="244dp"
+        android:background="@color/colorPrimary"/>
+</RelativeLayout>
